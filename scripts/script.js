@@ -30,7 +30,7 @@ function showBanners() {
 
       document.querySelector(`.image${interval}`).style.display = "none";
       interval++;
-    }, 400);
+    }, 1000);
 
     window.onload = intervals;
   }, 4000);
