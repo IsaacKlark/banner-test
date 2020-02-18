@@ -32,7 +32,7 @@ function showBanners() {
       interval++;
     }, 400);
 
-    intervals;
+    window.onload = intervals;
   }, 4000);
 
   const bannerCloser = document.querySelector(".banner__close");
