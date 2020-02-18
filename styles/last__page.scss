@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "DINNextLTPro-Regular";
+    src: url("../fonts/DIN_Next/DINNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "DINNextLTPro-Bold";
+    src: url("../fonts/DIN_Next/DINNextLTPro-Bold.otf");
+}
+
+.last-page {
+    display: none;
+    margin-top: 30vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    & h2 {
+        text-transform: uppercase;
+        font-family: "DINNextLTPro-Bold";
+    }
+
+    &__text {
+        font-family: "DINNextLTPro-Regular";
+        color: gray;
+    }
+
+    & a {
+        text-decoration: none;
+        font-family: "DINNextLTPro-Bold";
+        color: black;
+        border-bottom: dotted lightgreen;
+    }
+
+    & a:hover {
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 900px) {
+    .last-page { 
+        &__text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+        }
+    }
+}

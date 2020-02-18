@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "DINNextLTPro-Regular";
+    src: url("../fonts/DIN_Next/DINNextLTPro-Regular.otf");
+}
+
+@font-face {
+    font-family: "DINNextLTPro-Bold";
+    src: url("../fonts/DIN_Next/DINNextLTPro-Bold.otf");
+}
+
+@font-face {
+    font-family: "DINNextLTPro-Bold";
+    src: url("../fonts/DIN_Next/DINNextLTPro-Bold.otf");
+}
+
+.footer {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-bottom: 2vw;
+    z-index: 4;
+
+    &__left {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 4vw;
+        background-image: url("../images/pixlStydiosFromUnderstone.png");
+        width: 310px;
+        height: 28px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__right {
+        margin-right: 4vw;
+        text-transform: uppercase; 
+        font-family: "DINNextLTPro-Regular";
+        font-size: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; 
+        -webkit-box-align: center; 
+            -ms-flex-align: center; 
+                align-items: center;
+    }
+
+    &__dot {
+        font-size: 16px;
+        color: green;
+    }
+
+    &__pixl-studios {
+        font-size: 16px;
+        font-family: "DINNextLTPro-Bold";
+        text-transform: uppercase;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        margin-top: 200px;
+
+        &__left {
+            margin: 1vh 0;
+        }
+
+        &__right {
+            margin: 1vh 0;
+        }
+    } 
+}

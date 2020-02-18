@@ -1,0 +1,22 @@
+@import "cup";
+@import "second-page";
+@import "banner";
+@import "last__page";
+@import "footer";
+
+body {
+    background-image: url("../images/start.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: rgba(0,0,0,0);
+    width: 100vw;
+}
