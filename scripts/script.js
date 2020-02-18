@@ -62,4 +62,4 @@ function showBanners() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", showBanners);
+window.onload = showBanners();
